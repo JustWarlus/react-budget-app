@@ -1,5 +1,13 @@
 import React from "react";
+import { Budget, Expenses, FormAddExpenses } from "./components";
+import { Container } from "./GlobalStyle";
 
 export const App = () => {
-  return <div>App</div>;
+  return (
+    <Container>
+      <Budget />
+      <Expenses />
+      <FormAddExpenses />
+    </Container>
+  );
 };
