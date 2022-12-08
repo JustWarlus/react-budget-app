@@ -1,4 +1,3 @@
-import React from "react";
 import { Badge } from "../Badge";
 import { StyledPurchase, InfoPurchase, NamePurchase } from "./styles";
 import { ReactComponent as CloseIcon } from "../../assets/icons/close.svg";

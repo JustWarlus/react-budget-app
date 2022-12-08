@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const StyledExpensesCard = styled.div`
-  padding: 38px 20px;
   height: 100px;
+  padding: 38px 20px;
   box-sizing: border-box;
   background: #e7bbe3;
   border-radius: 10px;

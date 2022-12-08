@@ -1,4 +1,3 @@
-import React from "react";
 import { Purchase } from "../Purchase";
 import { StyledExpensesList } from "./styles";
 

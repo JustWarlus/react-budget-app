@@ -11,10 +11,10 @@ const StyledPurchase = styled.div`
 
 const InfoPurchase = styled.div`
   width: 100%;
-  padding-right: 20px;
-  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  padding-right: 20px;
+  box-sizing: border-box;
 `;
 
 const NamePurchase = styled.span`

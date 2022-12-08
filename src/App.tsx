@@ -1,4 +1,3 @@
-import React from "react";
 import { Budget, Expenses, FormAddExpenses } from "./components";
 import { Container } from "./GlobalStyle";
 

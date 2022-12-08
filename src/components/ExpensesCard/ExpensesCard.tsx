@@ -1,4 +1,3 @@
-import React from "react";
 import { StyledExpensesCard, Expenses } from "./styles";
 
 export const ExpensesCard = () => {

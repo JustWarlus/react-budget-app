@@ -1,4 +1,3 @@
-import React from "react";
 import { StyledRemainingCard, Remaining } from "./styles";
 
 export const RemainingCard = () => {

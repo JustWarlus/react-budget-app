@@ -1,4 +1,3 @@
-import React from "react";
 import { StyledBudgetCard, Budget, Button } from "./styles";
 
 export const BudgetCard = () => {

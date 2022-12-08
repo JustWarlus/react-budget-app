@@ -1,8 +1,7 @@
-import React from "react";
 import { BudgetCard } from "../BudgetCard";
 import { CurrencySelect } from "../CurrencySelect";
 import { ExpensesCard } from "../ExpensesCard";
-import { RemainingCard } from "../RemainingCard/RemainingCard";
+import { RemainingCard } from "../RemainingCard";
 import { Title } from "../Title";
 
 import { HeaderBlock, BudgetCardList } from "./styles";
