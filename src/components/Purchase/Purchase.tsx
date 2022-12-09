@@ -1,15 +1,24 @@
 import { Badge } from "../Badge";
 import { StyledPurchase, InfoPurchase, NamePurchase } from "./styles";
 import { ReactComponent as CloseIcon } from "../../assets/icons/close.svg";
+import { useExpensesContext } from "../../context/ExpensesContext/ExpensesContext";
 
-export const Purchase = () => {
+interface IPurchase {
+  name: string;
+  cost: number;
+  id: string;
+}
+
+export const Purchase = ({ name, cost, id }: IPurchase) => {
+  const { deleteExpense } = useExpensesContext();
+
   return (
     <StyledPurchase>
       <InfoPurchase>
-        <NamePurchase>shoping</NamePurchase>
-        <Badge coust={500} />
+        <NamePurchase>{name}</NamePurchase>
+        <Badge coust={cost} />
       </InfoPurchase>
-      <CloseIcon />
+      <CloseIcon onClick={() => deleteExpense(id)} />
     </StyledPurchase>
   );
 };

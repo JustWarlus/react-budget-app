@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Search = styled.input`
+const SearchExpenses = styled.input`
   width: 100%;
   padding: 15px 20px;
   box-sizing: border-box;
@@ -19,4 +19,12 @@ const Search = styled.input`
   }
 `;
 
-export { Search };
+const EmptyExpenses = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0;
+  width: 100%;
+`;
+
+export { SearchExpenses, EmptyExpenses };

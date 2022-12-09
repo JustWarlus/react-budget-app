@@ -1,3 +1,5 @@
+import { useCurrencyContext } from "../../context";
+
 import { StyledBadge } from "./styles";
 
 interface IBadge {
@@ -5,5 +7,11 @@ interface IBadge {
 }
 
 export const Badge = ({ coust }: IBadge) => {
-  return <StyledBadge>${coust}</StyledBadge>;
+  const { curentCurrency } = useCurrencyContext();
+  return (
+    <StyledBadge>
+      {curentCurrency.value}
+      {coust}
+    </StyledBadge>
+  );
 };
