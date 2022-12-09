@@ -4,7 +4,11 @@ import {
   useCurrencyContext,
 } from "./CurrencyContext/CurrencyContext";
 
-import { ExpensesContext } from "./ExpensesContext/ExpensesContext";
+import {
+  ExpensesContext,
+  useExpensesContext,
+  ExpensesContextProvider,
+} from "./ExpensesContext/ExpensesContext";
 
 import { BudgetContextProvider, useBudgetContext } from "./BudgetContext/BudgetContext";
 
@@ -15,4 +19,6 @@ export {
   ExpensesContext,
   BudgetContextProvider,
   useBudgetContext,
+  useExpensesContext,
+  ExpensesContextProvider,
 };
