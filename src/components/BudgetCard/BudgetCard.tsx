@@ -18,7 +18,7 @@ export const BudgetCard = () => {
     <StyledBudgetCard>
       {isBudgetActive ? (
         <>
-          <StyledInput {...inputBudget} type="number" placeholder="enter budget" />
+          <StyledInput {...inputBudget} type="number" placeholder="Enter budget" />
           <Button onClick={() => handleSave()}>Save</Button>
         </>
       ) : (

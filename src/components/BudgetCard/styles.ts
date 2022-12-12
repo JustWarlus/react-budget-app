@@ -25,6 +25,7 @@ const Button = styled.button`
   background: #ffffff;
   border-radius: 10px;
   border: none;
+  cursor: pointer;
 `;
 
 const StyledInput = styled.input`

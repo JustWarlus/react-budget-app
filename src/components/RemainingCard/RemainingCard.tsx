@@ -10,7 +10,7 @@ export const RemainingCard = () => {
   const remainingValue = budget - expenses.reduce((total, { cost }) => total + cost, 0);
 
   return (
-    <StyledRemainingCard>
+    <StyledRemainingCard isPositive={remainingValue >= 0}>
       <Remaining>
         {remainingValue >= 0
           ? `Remaining: ${curentCurrency.value}${remainingValue}`

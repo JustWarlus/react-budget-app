@@ -18,8 +18,16 @@ export const FormAddExpenses = () => {
   return (
     <Form onSubmit={handleSubmit(onSubmit)}>
       <Title nameBlock="Add Expenses" />
-      <StyledInput placeholder="enter name ..." type="text" {...register("name")} />
-      <StyledInput placeholder="enter cost ..." type="number" {...register("cost")} />
+      <StyledInput
+        placeholder="enter name ..."
+        type="text"
+        {...register("name", { required: true })}
+      />
+      <StyledInput
+        placeholder="enter cost ..."
+        type="number"
+        {...register("cost", { required: true })}
+      />
       <Button />
     </Form>
   );

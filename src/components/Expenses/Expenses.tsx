@@ -24,7 +24,7 @@ export const Expenses = () => {
     <>
       <Title nameBlock="Expenses" />
       <SearchExpenses {...search} placeholder="search ..." />
-      {expenses.length ? (
+      {expenses.length && searchExpenses.length ? (
         <ExpensesList searchExpenses={searchExpenses} />
       ) : (
         <EmptyExpenses>Oooops 🙈</EmptyExpenses>

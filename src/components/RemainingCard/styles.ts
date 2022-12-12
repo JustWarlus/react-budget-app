@@ -1,10 +1,15 @@
 import styled from "styled-components";
+import { StyledBudgetCard } from "../BudgetCard/styles";
 
-const StyledRemainingCard = styled.div`
+interface IProps {
+  isPositive: boolean;
+}
+
+const StyledRemainingCard = styled(StyledBudgetCard)<IProps>`
   padding: 38px 20px;
   box-sizing: border-box;
   height: 100px;
-  background: #ccd5ff;
+  background: ${({ isPositive }) => (isPositive ? "#ccd5ff" : "#ba5536")};
   border-radius: 10px;
 `;
 const Remaining = styled.span`

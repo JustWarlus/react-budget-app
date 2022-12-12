@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const SearchExpenses = styled.input`
   width: 100%;
+
   padding: 15px 20px;
   box-sizing: border-box;
   margin-top: 30px;
@@ -20,10 +21,11 @@ const SearchExpenses = styled.input`
 `;
 
 const EmptyExpenses = styled.div`
+  min-height: 190px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 80px 0;
   width: 100%;
 `;
 
